@@ -1,0 +1,35 @@
+.App {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+
+  .bg {
+    background-image: url("/Images/bg.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 10px 30px;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .Box {
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+    width: 1300px;
+    height: 500px;
+    z-index: 1;
+    opacity: 0.8;
+    background-color: black;
+  }
+}
