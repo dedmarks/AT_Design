@@ -1,7 +1,13 @@
+$base-color: rgb(224, 184, 4);
+
 .App {
   position: relative;
   height: 100vh;
   background-color: black;
+
+  .logo {
+    font-family: "Urbanist", sans-serif;
+  }
 
   .bg {
     background-image: url("/Images/bg.jpeg");
@@ -13,23 +19,115 @@
 
   .header {
     position: absolute;
+    display: flex;
     z-index: 1;
     color: white;
-    padding: 10px 30px;
+    padding: 40px 40px;
 
     h1 {
       font-size: 25px;
+    }
+
+    .nav_container {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
     }
   }
 
   .Box {
     position: absolute;
     bottom: 150px;
-    left: 20px;
-    width: 1300px;
+    display: flex;
+    width: 90%;
+    right: 80px;
+    left: 40px;
     height: 500px;
-    z-index: 1;
-    opacity: 0.8;
-    background-color: black;
+    background: rgb(0, 0, 0, 0.8);
+
+    .left_line {
+      width: 15px;
+      margin-top: 30px;
+      background-color: $base-color;
+      height: 440px;
+    }
+
+    .right_box {
+      background-color: $base-color;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      height: 100%;
+    }
+
+    .main_txt {
+      color: $base-color;
+      margin-top: 110px;
+      font-size: 70px;
+      margin-bottom: 60px;
+      font-family: "Lato", sans-serif;
+      margin-left: 20%;
+    }
+
+    .sub_txt {
+      color: white;
+      font-size: 30px;
+      font-family: "Urbanist", sans-serif;
+      font-weight: 1000;
+      margin-left: 5%;
+    }
+
+    .txt_container {
+      display: flex;
+      margin-left: 20%;
+      align-items: center;
+      color: white;
+    }
+
+    .txt_container1 {
+      display: flex;
+      margin-left: 10%;
+      align-items: center;
+      color: white;
+    }
+
+    .top_txt {
+      color: white;
+      margin-top: 30px;
+      font-size: 30px;
+      font-family: "Urbanist", sans-serif;
+      margin-left: 20%;
+    }
+
+    .contact_txt {
+      font-size: 30px;
+      color: black;
+      margin-right: 80px;
+      margin-top: 350px;
+      font-family: "Urbanist", sans-serif;
+    }
+
+    .l {
+      font-family: "Lato", sans-serif;
+      margin-left: 10%;
+    }
+
+    .arrow_right {
+      width: 40px;
+      margin-top: 350px;
+      cursor: pointer;
+      transform: rotate(90deg);
+      height: 40px;
+    }
+
+    .arrow_down {
+      width: 40px;
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+      height: 40px;
+      transform: rotate(180deg);
+      border-radius: 4px;
+    }
   }
 }
